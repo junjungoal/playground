@@ -15,3 +15,4 @@ srv = WEBrick::HTTPServer.new(
 srv.mount('/', TestContentServlet)
 trap("INT"){srv.shutdown}
 srv.start
+
